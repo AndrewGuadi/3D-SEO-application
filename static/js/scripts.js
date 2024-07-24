@@ -9,27 +9,27 @@ function rotateCube(side) {
     let rotateX = 0, rotateY = 0;
 
     switch(side) {
-        case 'front':
+        case 'home':
             rotateX = 0;
             rotateY = 0;
             break;
-        case 'back':
+        case 'about-us':
             rotateX = 0;
             rotateY = 180;
             break;
-        case 'right':
+        case 'contact-us':
             rotateX = 0;
             rotateY = -90;
             break;
-        case 'left':
+        case 'services':
             rotateX = 0;
             rotateY = 90;
             break;
-        case 'top':
+        case 'reviews':
             rotateX = -90;
             rotateY = 0;
             break;
-        case 'bottom':
+        case 'blog':
             rotateX = 90;
             rotateY = 0;
             break;

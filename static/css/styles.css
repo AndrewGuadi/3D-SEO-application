@@ -12,7 +12,7 @@ body {
 
 .cube {
     width: 100vw;
-    height: 1500px;
+    height: 100vh;
     position: relative;
     transform-style: preserve-3d;
     transition: transform 1s;
@@ -21,7 +21,7 @@ body {
 .cube div {
     position: absolute;
     width: 100vw;
-    height: 1500px;
+    height: 100vh;
     background-color: rgba(255, 255, 255, 0.9);
     border: 1px solid #000000;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -32,20 +32,35 @@ body {
     text-align: center;
 }
 
-.cube .front  { transform: rotateY(  0deg) translateZ(750px); }
-.cube .back   { transform: rotateY(180deg) translateZ(750px); }
-.cube .right  { transform: rotateY( 90deg) translateZ(750px); }
-.cube .left   { transform: rotateY(-90deg) translateZ(750px); }
-.cube .top    { transform: rotateX( 90deg) translateZ(750px); }
-.cube .bottom { transform: rotateX(-90deg) translateZ(750px); }
+.cube .front  { transform: rotateY(  0deg) translateZ(50vh); }
+.cube .back   { transform: rotateY(180deg) translateZ(50vh); }
+.cube .right  { transform: rotateY( 90deg) translateZ(50vh); }
+.cube .left   { transform: rotateY(-90deg) translateZ(50vh); }
+.cube .top    { transform: rotateX( 90deg) translateZ(50vh); }
+.cube .bottom { transform: rotateX(-90deg) translateZ(50vh); }
 
 h1 {
     font-size: 2vw;
     margin-bottom: 20px;
 }
 
-button {
+p, ul {
+    font-size: 1.2vw;
+    margin: 20px;
+}
+
+a {
     padding: 10px 20px;
     font-size: 1vw;
     cursor: pointer;
+    text-decoration: none;
+    color: #007BFF;
+    border: 1px solid #007BFF;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+a:hover {
+    background-color: #007BFF;
+    color: white;
 }

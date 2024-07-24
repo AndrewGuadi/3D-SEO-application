@@ -3,28 +3,28 @@ from flask import Flask, render_template
 app = Flask(__name__)
 
 @app.route('/')
-def index():
-    return render_template('cube.html', side='front')
+def home():
+    return render_template('cube.html', side='home')
 
-@app.route('/back')
-def back():
-    return render_template('cube.html', side='back')
+@app.route('/about-us')
+def about_us():
+    return render_template('cube.html', side='about-us')
 
-@app.route('/right')
-def right():
-    return render_template('cube.html', side='right')
+@app.route('/contact-us')
+def contact_us():
+    return render_template('cube.html', side='contact-us')
 
-@app.route('/left')
-def left():
-    return render_template('cube.html', side='left')
+@app.route('/services')
+def services():
+    return render_template('cube.html', side='services')
 
-@app.route('/top')
-def top():
-    return render_template('cube.html', side='top')
+@app.route('/reviews')
+def reviews():
+    return render_template('cube.html', side='reviews')
 
-@app.route('/bottom')
-def bottom():
-    return render_template('cube.html', side='bottom')
+@app.route('/blog')
+def blog():
+    return render_template('cube.html', side='blog')
 
 if __name__ == '__main__':
     app.run(debug=True)
