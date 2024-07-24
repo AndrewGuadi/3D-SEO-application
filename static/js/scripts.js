@@ -1,3 +1,9 @@
+document.addEventListener('DOMContentLoaded', function() {
+    const cube = document.querySelector('.cube');
+    const side = cube.getAttribute('data-side');
+    rotateCube(side);
+});
+
 function rotateCube(side) {
     const cube = document.querySelector('.cube');
     let rotateX = 0, rotateY = 0;

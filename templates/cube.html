@@ -8,30 +8,30 @@
 </head>
 <body>
     <div class="cube-container">
-        <div class="cube">
+        <div class="cube" data-side="{{ side }}">
             <div class="front">
                 <h1>Front</h1>
-                <button onclick="rotateCube('back')">Back</button>
+                <a href="/back">Back</a>
             </div>
             <div class="back">
                 <h1>Back</h1>
-                <button onclick="rotateCube('right')">Right</button>
+                <a href="/right">Right</a>
             </div>
             <div class="right">
                 <h1>Right</h1>
-                <button onclick="rotateCube('left')">Left</button>
+                <a href="/left">Left</a>
             </div>
             <div class="left">
                 <h1>Left</h1>
-                <button onclick="rotateCube('bottom')">Bottom</button>
+                <a href="/bottom">Bottom</a>
             </div>
             <div class="top">
                 <h1>Top</h1>
-                <button onclick="rotateCube('front`')">Front</button>
+                <a href="/">Front</a>
             </div>
             <div class="bottom">
                 <h1>Bottom</h1>
-                <button onclick="rotateCube('top')">Top</button>
+                <a href="/top">Top</a>
             </div>
         </div>
     </div>
