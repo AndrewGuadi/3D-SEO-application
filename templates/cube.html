@@ -10,40 +10,22 @@
     <div class="cube-container">
         <div class="cube" data-side="{{ side }}">
             <div class="front">
-                <h1>Home</h1>
-                <p>Welcome to our website!</p>
-                <a href="/about-us">About Us</a>
+                {% include 'includes/home.html' %}
             </div>
             <div class="back">
-                <h1>About Us</h1>
-                <p>Learn more about our company and team.</p>
-                <a href="/contact-us">Contact Us</a>
+                {% include 'includes/about_us.html' %}
             </div>
             <div class="right">
-                <h1>Contact Us</h1>
-                <p>Email: contact@company.com</p>
-                <p>Phone: (123) 456-7890</p>
-                <a href="/services">Services</a>
+                {% include 'includes/contact_us.html' %}
             </div>
             <div class="left">
-                <h1>Services</h1>
-                <p>We offer a range of services to meet your needs.</p>
-                <ul>
-                    <li>Service 1</li>
-                    <li>Service 2</li>
-                    <li>Service 3</li>
-                </ul>
-                <a href="/reviews">Reviews</a>
+                {% include 'includes/services.html' %}
             </div>
             <div class="top">
-                <h1>Reviews</h1>
-                <p>See what our customers have to say about us.</p>
-                <a href="/blog">Blog</a>
+                {% include 'includes/reviews.html' %}
             </div>
             <div class="bottom">
-                <h1>Blog</h1>
-                <p>Read our latest blog posts.</p>
-                <a href="/">Home</a>
+                {% include 'includes/blog.html' %}
             </div>
         </div>
     </div>
