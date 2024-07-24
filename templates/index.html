@@ -3,36 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI Driven Abstraction</title>
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <title>3D Cube</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
 </head>
 <body>
-    <div class="cube">
-        <div class="front">
-            <h1>AI Driven Abstraction</h1>
-            <p>Introduction to AI-driven abstraction techniques.</p>
-        </div>
-        <div class="back">
-            <h1>Data Handling</h1>
-            <p>Methods for managing and processing data efficiently.</p>
-        </div>
-        <div class="right">
-            <h1>Model Training</h1>
-            <p>Overview of training models with abstracted data.</p>
-        </div>
-        <div class="left">
-            <h1>Deployment</h1>
-            <p>Best practices for deploying AI models.</p>
-        </div>
-        <div class="top">
-            <h1>Use Cases</h1>
-            <p>Examples of successful AI-driven abstraction implementations.</p>
-        </div>
-        <div class="bottom">
-            <h1>Future Trends</h1>
-            <p>Exploring future trends in AI-driven abstraction.</p>
+    <div class="cube-container">
+        <div class="cube">
+            <div class="front">
+                <h1>Front</h1>
+                <button onclick="rotateCube('back')">Back</button>
+            </div>
+            <div class="back">
+                <h1>Back</h1>
+                <button onclick="rotateCube('right')">Right</button>
+            </div>
+            <div class="right">
+                <h1>Right</h1>
+                <button onclick="rotateCube('left')">Left</button>
+            </div>
+            <div class="left">
+                <h1>Left</h1>
+                <button onclick="rotateCube('bottom')">Bottom</button>
+            </div>
+            <div class="top">
+                <h1>Top</h1>
+                <button onclick="rotateCube('front`')">Front</button>
+            </div>
+            <div class="bottom">
+                <h1>Bottom</h1>
+                <button onclick="rotateCube('top')">Top</button>
+            </div>
         </div>
     </div>
+    <script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
 </body>
 </html>
